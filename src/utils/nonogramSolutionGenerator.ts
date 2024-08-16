@@ -3,7 +3,6 @@ function generateNonogramSolution(rows : number, cols: number) {
   const rowClues: number[][] = [];
   const colClues: number[][] = [];
 
-  // Generate random binary values for each cell
   for (let i = 0; i < rows; i++) {
     const row: number[] = [];
     for (let j = 0; j < cols; j++) {
@@ -17,8 +16,6 @@ function generateNonogramSolution(rows : number, cols: number) {
 
 function generateColClues(solution: number[][]) {
   const colClues: number[][] = [];
-
-  // Generate column clues
   for (let j = 0; j < solution[0].length; j++) {
     const clues: number[] = [];
     let count = 0;

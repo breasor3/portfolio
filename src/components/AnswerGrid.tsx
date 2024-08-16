@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NonoGramSolution } from '../models/NonogramSolution';
 import { generateNonogramPuzzle } from '../utils/nonogramSolutionGenerator';
 import { isVisible } from '@testing-library/user-event/dist/utils';
+import './AnswerGrid.css'
 
 interface AnswerGridProps {
   template: number[][];
@@ -70,6 +71,7 @@ const AnswerGrid: React.FC<AnswerGridProps> = ({ template, colorCheck }) => {
               <div key={rowIndex} style={{ display: 'flex' }}>
                 {row.map((cell, colIndex) => (
                   <button
+                    className='grid-button'
                     key={colIndex}
                     onClick={() => handleGridClick(colorCheck, rowIndex, colIndex)}
                     style={{
@@ -82,7 +84,7 @@ const AnswerGrid: React.FC<AnswerGridProps> = ({ template, colorCheck }) => {
                       display: 'flex',
                       justifyContent: 'center',
                       alignItems: 'center',
-                      fontSize: '24px',
+                      fontSize: '60px',
                     }}
                   >
                     {userInput[rowIndex][colIndex] === 3 ? 'X' : ''}
@@ -101,7 +103,6 @@ const AnswerGrid: React.FC<AnswerGridProps> = ({ template, colorCheck }) => {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             backgroundColor: 'white',
-            padding: '20px',
             border: '1px solid black',
             zIndex: 999,
           }}

@@ -38,12 +38,17 @@ const PuzzlePage: React.FC = () => {
                     style={{
                       width: '45px',
                       height: '45px',
-                      backgroundColor: 'white',
+                      backgroundColor: 'black',
+                      borderColor: 'white',
+                      borderStyle: 'solid',
+                      borderRadius: '0',
+                      borderWidth: '2px',
                       cursor: 'pointer',
                       display: 'flex',
                       justifyContent: 'center',
                       alignItems: 'center',
-                      fontSize: '24px',
+                      fontSize: '20px',
+                      color: 'white',
                     }}
                     /></span>
         </div>

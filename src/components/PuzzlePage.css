@@ -103,5 +103,12 @@ input:checked + .slider:before {
 }
 
 .switch-text {
-  font-size: 32px;
+  font-size: 64px;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 
+   -2px -2px 0 white,  
+    2px -2px 0 white,
+   -2px  2px 0 white,
+    2px  2px 0 white;
 }

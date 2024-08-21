@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
       <section className="contact">
         <h2>Contact</h2>
         <p>Email: breasor3@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>LinkedIn: www.linkedin.com/in/berkeley-r-8218b8165</p>
       </section>
     </div>
   );

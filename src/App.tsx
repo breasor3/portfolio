@@ -24,12 +24,6 @@ const App: React.FC = () => {
             About Me
           </li>
           <li
-            className={activeTab === 'information' ? 'active' : ''}
-            onClick={() => handleTabClick('information')}
-          >
-            Explanation
-          </li>
-          <li
             className={activeTab === 'nonogram' ? 'active' : ''}
             onClick={() => handleTabClick('nonogram')}
           >
@@ -45,7 +39,6 @@ const App: React.FC = () => {
       </nav>
 
       <div>
-        {activeTab === 'information' && <NonogramInfo/>}
         {activeTab === 'nonogram' && <PuzzlePage/>}
         {activeTab === 'recipefinder' && <RecipeFinder/>}
         {activeTab === 'aboutme' && <AboutMe/>}

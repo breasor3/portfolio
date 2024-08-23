@@ -5,6 +5,7 @@ import RowClues from './RowClues';
 import { generateNonogramPuzzle } from '../utils/nonogramSolutionGenerator';
 import SolutionGrid from './SolutionGrid';
 import './PuzzlePage.css';
+import NonogramInfo from './NonogramsInfo';
 
 const { solution, rowClues, colClues } = generateNonogramPuzzle(10, 10);
 
@@ -56,6 +57,7 @@ const PuzzlePage: React.FC = () => {
           {<SolutionGrid template={solution} /> }
         </div>  */}
       </div>
+      <NonogramInfo/>
     </div>
   );
 };
